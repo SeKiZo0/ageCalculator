@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div>
+    <div class="container">
+
+      <form action="">
+        <div class="dateOutput">
+          <div>
+            <label for="day">DAY</label><br>
+            <input type="text" name="day" id="day">
+            <p id="dateError"></p>
+          </div>
+          <div>
+            <label for="month">MONTH</label><br>
+            <input type="text" name="month" id="month">
+            <p id="monthError"></p>
+          </div>
+          <div>
+            <label for="year">YEAR</label><br>
+            <input type="text" name="year" id="year">
+            <p id="yearError"></p>
+          </div>
+        </div>
+        <div class="submitSection">
+          <hr class="hr1">
+          <button class="arrow" onclick="getAge()" type="submit" value="Submit"></button>
+          <hr class="hr2">
+        </div>
+      </form>
+
+     <div class="output">
+        <p><b class="date" id="years">--</b> years</p>
+        <p><b class="date" id="months">--</b> months</p>
+        <p><b class="date" id="days">--</b> days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tiyiselani Mofamadi</a>.
+  </div>
+
+  <section>
+    <div class="outer Circle" onclick="Outer()" id="outer">
+      <div class="inner Circle" onclick="Inner()" id="inner">
+        <div class="dot Circle" onclick="Dot()" id="dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

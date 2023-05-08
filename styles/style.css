@@ -1,0 +1,125 @@
+body{
+    background-color: hsl(0, 0%, 94%);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    top: 0%;
+    font-family: "Poppins";
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 15px;
+    border-bottom-right-radius: 100px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 15px;
+}
+
+.dateOutput{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+}
+
+.dateOutput input{
+    width: 70px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0%;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.dateOutput label{
+    font-size: 10px;
+}
+
+.dateOutput{
+    color: hsl(0, 1%, 44%);
+}
+
+.dateOutput div{
+    margin: 5px;
+}
+
+.arrow{
+    background-image: url("../assets/images/icon-arrow.svg");
+    background-size: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(259, 100%, 65%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+
+.arrow:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.submitSection{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.submitSection hr{
+    flex: 1;
+    height: 1px;
+    padding: 0%;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.hr1{
+    width: 0px;
+}
+
+.hr2{
+    display: none;
+}
+
+.output{
+    font-size: 50px;
+    font-weight: 1000;
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+
+}
+.output p{
+    margin-top:0%;
+    margin-bottom:0%;
+}
+.output p b{
+    margin-top:0%;
+    margin-bottom:0%;
+
+}
+
+.date{
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 480px) {
+        .hr2{
+            display: flex;
+        }
+        .dateOutput input{
+            width: 80%;
+        }
+        
+        .submitSection{
+            display: flex;
+            align-items: center;
+            margin-top: 0px;
+        }
+  }
+
